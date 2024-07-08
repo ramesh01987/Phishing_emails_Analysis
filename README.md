@@ -12,17 +12,10 @@ The dataset used for this analysis is obtained from Kaggle and can be found (htt
 
 In the Dataset Exploration section, I utilized Pandas to perform initial analysis tasks. This included using the head() function to examine basic dataset characteristics and assessing the distribution between two labels: 0 (Non-Phishing) and 1 (Phishing).
 
-## Text preprocessing
-
-Text preprocessing standardizes data and improves email analysis by converting text to lowercase for case insensitivity, removing punctuation to focus on content, and eliminating stop words to reduce noise. Modules used include NLTK, stopwords, and strings
-
-## Top 10 Frequent Words
-
-Using Python modules and techniques, we identify the top 10 most frequent words in phishing and non-phishing emails to uncover distinctive vocabulary.
 
 ## Chi-square Test
 
-We use a contingency table and perform a Chi-square test to investigate associations between specific words in email texts and their classification as phishing or non-phishing. This helps determine statistically significant relationships.
+I used a contingency table and Chi-square test to investigate associations between specific words in email texts and their classification as phishing or non-phishing. This helps determine statistically significant relationships.
 
 ## Point Biserial Correlation
 
@@ -66,6 +59,39 @@ After analyzing the Phishing Email Dataset, the following insights were discover
 6. **Common Themes in Non-Phishing Emails**:
    - Non-phishing emails often focus on internal operations, industry-specific language, and professional or technical jargon relevant to the recipient's sector.
 
+# Modules
+
+This project utilizes several Python modules to analyze and visualize the Phishing Email Dataset effectively:
+
+- **pandas**: Used for data manipulation and analysis, including loading datasets, data cleaning, and creating data structures like dataframes.
+
+- **WordCloud**: Generates visual representations of word frequency in text data, aiding in identifying prominent terms or themes.
+
+- **nltk.corpus.stopwords**: Provides a set of commonly used words (e.g., "the", "is", "and") that are often filtered out during text preprocessing to focus on meaningful content.
+
+- **string**: Provides a collection of string constants and utilities for string manipulation tasks, such as removing punctuation from text data.
+
+- **matplotlib.pyplot**: Part of the Matplotlib library, used for creating visualizations like line plots, histograms, and bar charts to visualize data insights.
+
+- **Counter**: From the collections module, used for counting the frequency of elements in a dataset, often applied to analyze word frequency or data distribution.
+
+- **seaborn**: Builds on Matplotlib and provides additional plot types and enhanced aesthetics for statistical data visualization.
+
+- **chi2_contingency**: A function from scipy.stats, used for performing the chi-square test of independence on contingency tables to assess associations between categorical variables.
+
+- **pointbiserialr**: Calculates the point-biserial correlation coefficient between a binary variable (e.g., phishing vs. non-phishing) and a continuous variable (e.g., word frequency), measuring their linear relationship.
+
+- **nltk.tokenize.word_tokenize**: Tokenizes sentences into words, essential for text preprocessing tasks like counting word occurrences or analyzing text structure.
+
+- **nltk.tokenize.sent_tokenize**: Splits text into sentences, useful for segmenting text data and analyzing sentence-level patterns.
+
+- **TextBlob**: Simplifies text processing tasks such as part-of-speech tagging, sentiment analysis, and translation through its intuitive interface.
+
+- **CountVectorizer**: Part of scikit-learn, converts a collection of text documents into a matrix of token counts, facilitating machine learning model training on text data.
+
+- **LatentDirichletAllocation**: From scikit-learn, used for topic modeling to discover abstract topics within a collection of documents, aiding in thematic analysis of text data.
+
+These modules collectively enable comprehensive analysis, visualization, and interpretation of the Phishing Email Dataset, empowering insights into email characteristics and distinguishing features between phishing and non-phishing emails.
 
 
 
