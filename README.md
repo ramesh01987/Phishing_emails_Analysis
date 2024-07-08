@@ -91,9 +91,6 @@ This project utilizes several Python modules to analyze and visualize the Phishi
 
 - **LatentDirichletAllocation**: From scikit-learn, used for topic modeling to discover abstract topics within a collection of documents, aiding in thematic analysis of text data.
 
-These modules collectively enable comprehensive analysis, visualization, and interpretation of the Phishing Email Dataset, empowering insights into email characteristics and distinguishing features between phishing and non-phishing emails.
-
-
 
 
 
